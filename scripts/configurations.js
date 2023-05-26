@@ -15,6 +15,6 @@ var showLinkedIn = "linkedin.com/in/luisantoniofreitas";
 var showGitHub = "github.com/luisantoniofreitas";
 var showLocation = "Rio de Janeiro, Brasil";
 
-showName = "John Doe";
-showProfession = "Creative Designer";
-showPhoto = "images/img.png";
+// showName = "John Doe";
+// showProfession = "Creative Designer";
+// showPhoto = "images/img.png";
