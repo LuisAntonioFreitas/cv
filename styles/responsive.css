@@ -1,0 +1,94 @@
+@media (max-width: 400px) and (orientation: portrait) {
+
+  .button-toggledarkmode {
+    top: -5px;
+    left: 0;
+  }
+  .button-toggledarkmode button {
+    font-size: 1rem;
+  }
+  .container {
+    max-width: 400px;
+    min-width: 400px;
+    min-height: none; 
+    margin: 15px;
+  }
+  .top {
+    height: 180px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .top h2 {
+    font-size: 1.15rem;
+    line-height: 0.7em;
+    letter-spacing: 0.1em;
+  }
+  .top h2 span {
+    font-size: 0.5em;
+    font-weight: 300;
+  }
+  .group {
+    gap: 20px;
+    grid-template-columns: 1fr 4fr;
+  }
+  .group .imgFx img {
+    width: 120px;
+  }
+  .group .right-side {
+    width: 100%;
+  }
+  .group .right-side p {
+    font-size: 0.7em;
+  }
+  .group .right-side .text-simple {
+    display: block;
+  }
+  .group .right-side .text-complete {
+    display: none;
+  }
+
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+  .button-toggledarkmode {
+    top: -8px;
+    left: 0;
+  }
+  .button-toggledarkmode button {
+    font-size: 1rem;
+  }
+  .container {
+    max-width: 900px;
+    min-height: none; 
+    margin: 20px;
+  }
+  .top {
+    height: 240px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .top h2 {
+    font-size: 1.25rem;
+    line-height: 0.7em;
+    letter-spacing: 0.1em;
+  }
+  .top h2 span {
+    font-size: 0.6em;
+    font-weight: 300;
+  }
+  .group {
+    gap: 20px;
+    grid-template-columns: 1fr 4fr;
+  }
+  .group .imgFx img {
+    width: 180px;
+  }
+  .group .right-side {
+    width: 100%;
+  }
+  .group .right-side p {
+    font-size: 0.9em;
+  }
+
+}

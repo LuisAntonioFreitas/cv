@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Currículo | Luis Antonio Freitas</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css"></link>
+  <link rel="stylesheet" type="text/css" href="styles/global.css"></link>
+  <link rel="stylesheet" type="text/css" href="styles/style.css"></link>
+  <link rel="stylesheet" type="text/css" href="styles/responsive.css"></link>
+
+  <script type="text/javascript" src="scripts/configurations.js"></script>
+  <script type="text/javascript" src="scripts/toggledarkmode.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="button-toggledarkmode">
+      <button id="buttonToggleDarkMode" onclick="handleToggleDarkMode()"
+      title="Modo Dark"><i class='fa-solid fa-moon'></i></button>
+    </div>
+
+    <div class="top">
+      <h2><script>document.write(showName);</script><br><span><script>document.write(showProfession);</script></span></h2>
+      <div class="group">
+        <div class="left-side">
+          <div class="imgFx">
+            <script>document.write(`<img src='${showPhoto}'>`);</script>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="text-simple">
+            <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
+              e como autônomo. Colaborei em projetos diversos, aplicando conhecimentos 
+              em tecnologias e metodologias para criar soluções web de alta qualidade. 
+              Familiarizado com o trabalho remoto, possuo habilidades para enfrentar 
+              desafios com autonomia e eficiência.
+            </p>
+          </div>
+          <div class="text-complete">
+            <p>Tenho uma vasta experiência no desenvolvimento web, adquirida ao 
+              longo de anos trabalhando remotamente e principalmente como autônomo. 
+              Durante esse período, tive a oportunidade de colaborar com diversos 
+              projetos e clientes, aplicando meu conhecimento em tecnologias e 
+              metodologias para criar soluções web de alta qualidade e desempenho. 
+              Estou familiarizado com o trabalho remoto e possuo habilidades que me 
+              permitem enfrentar desafios com autonomia e eficiência.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="left-side">
+
+        <h4>Contato</h4>
+        <ul class="contact-info">
+          <li>
+            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+            <span class="text"><script>document.write(showPhone);</script></span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <span class="text"><script>document.write(showEmail);</script></span>
+          </li>
+          <li>
+            <script>document.write(`<a link href='https://www.${showSite}' target='_blank'>`);</script>
+              <span class="icon"><i class="fa-solid fa-globe"></i></span>
+              <span class="text"><script>document.write(showSite);</script></span>
+            </a>
+          </li>
+          <li>
+            <script>document.write(`<a link href='https://www.${showLinkedIn}' target='_blank'>`);</script>
+              <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+              <span class="text"><script>document.write(showLinkedIn);</script></span>
+            </a>
+          </li>
+          <li>
+            <script>document.write(`<a link href='https://www.${showGitHub}' target='_blank'>`);</script>
+              <span class="icon"><i class="fa-brands fa-github"></i></span>
+              <span class="text"><script>document.write(showGitHub);</script></span>
+            </a>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-location-dot"></i></i></span>
+            <span class="text"><script>document.write(showLocation);</script></span>
+          </li>
+        </ul>
+
+        <h4>Skills</h4>
+        <div class="skills">
+          <div class="skills-box" style="--i:85%;">
+            <span class="icon"><i class="fa-brands fa-node-js"></i></i>
+              <p>Node</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:70%;">
+            <span class="icon"><i class="devicon-spring-plain"></i>
+              <p>Spring</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:60%;">
+            <span class="icon"><i class="devicon-typescript-plain"></i>  
+              <p>Typescript</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:60%;">
+            <span class="icon"><i class="devicon-javascript-plain"></i>
+              <p>Javascript</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:60%;">
+            <span class="icon"><i class="fa-brands fa-java"></i>
+              <p>Java</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:90%;">
+            <span class="icon"><i class="fa-solid fa-database"></i>
+              <p>SQL</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:90%;">
+            <span class="icon"><i class="fa-solid fa-gear"></i>
+              <p>API</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:80%;">
+            <span class="icon"><i class="fa-brands fa-html5"></i>
+              <p>HTML</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:60%;">
+            <span class="icon"><i class="fa-brands fa-css3-alt"></i>
+              <p>CSS</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:50%;">
+            <span class="icon"><i class="fa-brands fa-angular"></i>
+              <p>Angular</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:50%;">
+            <span class="icon"><i class="fa-brands fa-react"></i>
+              <p>React</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:50%;">
+            <span class="icon"><i class="fa-brands fa-docker"></i>
+              <p>Docker</p>
+            </span>
+            <div class="value"></div>
+          </div>
+          <div class="skills-box" style="--i:85%;">
+            <span class="icon"><i class="devicon-dot-net-plain"></i>
+              <p>ASP.NET</p>
+            </span>
+            <div class="value"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="right-side">
+
+        <h4 class="adjst-margin">Formação</h4>
+        <div class="edu-group">
+          <div class="edu-group-box">
+            <p>1992<br>1990</p>
+            <div class="value">
+              <b>Ensino Técnico Completo<br>
+              <span>Ciência da Computação e Processamento de Dados</span></b>
+              <p>
+                Ênfase em algoritmos, estruturas de dados, análise de sistemas, 
+                desenvolvimento de software e banco de dados.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="adjst-margin">Experiência</h4>
+        <div class="exp-group">
+          <div class="exp-group-box">
+            <p><script>document.write(yearCurrent);</script><br>2008</p>
+            <div class="value">
+              <b>Desenvolvedor Web<br>
+              <span>DATA-Z Consultoria<br>Consultoria na Área de Processos e Sistemas de Informação</span></b>
+              <p>
+                Realização de levantamento de necessidades e compreensão de processos, 
+                conduzindo análises e importação de dados com o objetivo de projetar 
+                soluções web.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div style="margin-bottom: 50px;">
+      <div style="display: block;">
+      
+        <div class="hobbies">
+          <h4 class="adjst-margin">Hobbies</h4>
+          <ul>
+            <li>
+              <i class="fa-solid fa-film"></i>
+              <p>Cinema</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-music"></i>
+              <p>Música</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-gamepad"></i>
+              <p>Game</p>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-book"></i>
+              <p>Livro</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-water-ladder"></i>
+              <p>Piscina</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-fish"></i>
+              <p>Aquário</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--font-color-primary);
+}
+:root {
+  --light-mode-font-color-primary: #000000;
+  --light-mode-font-color-title: #231fbf;
+  --light-mode-font-color-subtitle: #231fbf;
+  --light-mode-font-color-backvalue: #d9d9d9;
+  --light-mode-font-color-gray: #808080;
+  --light-mode-background-primary: #f5f5f5;
+  --light-mode-background-top: linear-gradient(45deg, #231fbf, #69175f);
+  --light-mode-img-filter-on: none;
+  --light-mode-img-filter-off: grayscale(100%);
+
+  --dark-mode-font-color-primary: #ffffff;
+  --dark-mode-font-color-title: #000000;
+  --dark-mode-font-color-subtitle: #ffffff;
+  --dark-mode-font-color-backvalue: #464646;
+  --dark-mode-font-color-gray: #A9A9A9;
+  --dark-mode-background-primary: #4f4f4f;
+  --dark-mode-background-top: linear-gradient(45deg, #000000, #666666);
+  --dark-mode-img-filter-on: grayscale(100%);
+  --dark-mode-img-filter-off: none;
+
+  --font-color-primary: var(--light-mode-font-color-primary);
+  --font-color-title: var(--light-mode-font-color-title);
+  --font-color-subtitle: var(--light-mode-font-color-subtitle);
+  --font-color-backvalue: var(--light-mode-font-color-backvalue);
+  --font-color-gray: var(--light-mode-font-color-gray);
+  --background-primary: var(--light-mode-background-primary);
+  --background-top: var(--light-mode-background-top);
+  --img-filter-on: var(--light-mode-img-filter-on);
+  --img-filter-off: var(--light-mode-img-filter-off);
+
+  --font-color-white: #ffffff;
+  --font-color-black: #000000;
+}
+.dark-mode {
+  --font-color-primary: var(--dark-mode-font-color-primary);
+  --font-color-title: var(--dark-mode-font-color-title);
+  --font-color-subtitle: var(--dark-mode-font-color-subtitle);
+  --font-color-backvalue: var(--dark-mode-font-color-backvalue);
+  --font-color-gray: var(--dark-mode-font-color-gray);
+  --background-primary: var(--dark-mode-background-primary);
+  --background-top: var(--dark-mode-background-top);
+
+  --img-filter-on: var(--dark-mode-img-filter-on);
+  --img-filter-off: var(--dark-mode-img-filter-off);
+}
