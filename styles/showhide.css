@@ -1,0 +1,19 @@
+.showhide {
+  width: 100%;
+}
+
+.showhide .trigger {
+  width: 100%;
+}
+
+.showhide .trigger:hover {
+  cursor: pointer;
+}
+
+.showhide .skill-certifications {
+  height: 0;
+}
+
+.showhide.open .skill-certifications {
+  height: auto;
+}

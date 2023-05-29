@@ -1,0 +1,41 @@
+article {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+article.open {
+  max-height: 10000px;
+}
+
+.text-main {
+  width: 100%;
+}
+
+.text-main button {
+  opacity: 70%;
+  background: var(--background-primary);
+  color: var(--font-color-primary);
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  right: 0;
+  position: absolute;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.text-main button span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 2px 8px 0 8px;
+}
+.text-main button i {
+  font-size: 1rem;
+  padding-right: 4px;
+}
+
+.text-main button:hover {
+  cursor: pointer;
+  background: var(--font-color-backvalue);
+}

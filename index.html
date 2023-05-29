@@ -10,9 +10,15 @@
   <link rel="stylesheet" type="text/css" href="styles/normalize.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/global.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/style.css"></link>
-  <link rel="stylesheet" type="text/css" href="styles/responsive.css"></link>
+  <link rel="stylesheet" type="text/css" href="styles/responsive.css"></link> 
+  <link rel="stylesheet" type="text/css" href="styles/showhide.css"></link>
+  <link rel="stylesheet" type="text/css" href="styles/showhidemore.css"></link>
+  <link rel="stylesheet" type="text/css" href="styles/showhidemoretop.css"></link>
 
   <script type="text/javascript" src="scripts/configurations.js"></script>
+  <script type="text/javascript" src="scripts/showhide.js" defer></script> 
+  <script type="text/javascript" src="scripts/showhidemore.js" defer></script> 
+  <script type="text/javascript" src="scripts/showhidemoretop.js" defer></script> 
   <script type="text/javascript" src="scripts/toggledarkmode.js" defer></script>
 </head>
 <body>
@@ -24,7 +30,7 @@
       title="Modo Dark"><i class='fa-solid fa-moon'></i></button>
     </div>
 
-    <div class="top">
+    <div id="top" class="top top-height">
       <h2><script>document.write(showName);</script><br><span><script>document.write(showProfession);</script></span></h2>
       <div class="group">
         <div class="left-side">
@@ -33,24 +39,78 @@
           </div>
         </div>
         <div class="right-side">
-          <div class="text-simple">
-            <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
-              e como autônomo. Colaborei em projetos diversos, aplicando conhecimentos 
-              em tecnologias e metodologias para criar soluções web de alta qualidade. 
-              Familiarizado com o trabalho remoto, possuo habilidades para enfrentar 
-              desafios com autonomia e eficiência.
-            </p>
+          
+          <div class="text-main">
+            <article id="text-main">
+              <div class="text-simple">
+                <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
+                  e como autônomo. Colaborei em projetos diversos, aplicando conhecimentos 
+                  em tecnologias e metodologias para criar soluções web de alta qualidade. 
+                  Familiarizado com o trabalho remoto, possuo habilidades para enfrentar 
+                  desafios com autonomia e eficiência.
+                </p>
+                <br>
+                <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
+                  e como autônomo. Colaborei em projetos diversos, aplicando conhecimentos 
+                  em tecnologias e metodologias para criar soluções web de alta qualidade. 
+                  Familiarizado com o trabalho remoto, possuo habilidades para enfrentar 
+                  desafios com autonomia e eficiência.
+                </p>
+                <br>
+                <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
+                  e como autônomo. Colaborei em projetos diversos, aplicando conhecimentos 
+                  em tecnologias e metodologias para criar soluções web de alta qualidade. 
+                  Familiarizado com o trabalho remoto, possuo habilidades para enfrentar 
+                  desafios com autonomia e eficiência.
+                </p>
+              </div>
+              <div class="text-complete">
+                <p>Tenho uma vasta experiência no desenvolvimento web, adquirida ao 
+                  longo de anos trabalhando remotamente e principalmente como autônomo. 
+                  Durante esse período, tive a oportunidade de colaborar com diversos 
+                  projetos e clientes, aplicando meu conhecimento em tecnologias e 
+                  metodologias para criar soluções web de alta qualidade e desempenho. 
+                  Estou familiarizado com o trabalho remoto e possuo habilidades que me 
+                  permitem enfrentar desafios com autonomia e eficiência.
+                </p>
+                <br>
+                <p>Utilizando o ASP.NET (.NET Framework VBScript), ao longo dos anos, 
+                  adquiri um profundo conhecimento desenvolvendo soluções web robustas e 
+                  eficientes. Minha expertise nessa tecnologia me permitiu entregar projetos 
+                  bem-sucedidos, garantindo alto desempenho e funcionalidade.
+                </p>
+                <br>
+                <p>Além disso, estou constantemente me atualizado, realizando cursos e obtendo 
+                  certificações em tecnologias do mundo do desenvolvimento web. Tenho um forte 
+                  interesse em expandir minhas habilidades e explorar novas oportunidades com 
+                  tecnologias como Node, Spring, TypeScript, JavaScript, Java, SQL, API REST e 
+                  RESTful, HTML, CSS, Angular, React, React Native, Azure, AWS, Docker, Kubernetes e 
+                  Linux. Meu objetivo é combinar minha experiência consolidada em ASP.NET com meu 
+                  entusiasmo por aprender e trabalhar com novas tecnologias, a fim de impulsionar 
+                  projetos inovadores e alcançar resultados excepcionais.
+                </p>
+                <br>
+                <p>Possuo sólida experiência na área de análise de processos, especificação 
+                  técnica/funcional, desenvolvimento, implantação, orientação e operação em soluções 
+                  web, adquirida ao longo de mais de 25 anos de atuação em diferentes nichos empresariais. 
+                  Durante minha carreira, tive a oportunidade de contribuir com o sucesso de empresas do 
+                  segmento de concessionárias automotivas, como o Grupo Itavema do Brasil, Milocar Rio, 
+                  Squadra Rio, Américas Barra, Euro Barra, Rio Tokio Botafogo e Intercar São Cristóvão.
+                </p>
+                <br>
+                <p>Também trabalhei com agências de automóveis, como o Feirão Multimarcas/Boulevard Shopping Car e 
+                  a Associação de Lojistas de Venda de Veículos Automotores, bem como com um escritório de advocacia, 
+                  o Cordeiro de Faria Advogados Associados. Minha experiência se estendeu para o controle de 
+                  estacionamento com empresas como a Marcotel Segurança e a World Park, bem como para uma unidade 
+                  fabril integrada às lojas na MG4 Confecções, entre outros contextos desafiadores. Meu envolvimento 
+                  abrangeu desde a concepção até a operação, garantindo o sucesso dos projetos e proporcionando 
+                  resultados efetivos para as organizações envolvidas.
+                </p>
+              </div>
+            </article>
+            <button id="read-text-main"><span>mostrar mais</span><i class="fa-solid fa-chevron-up"></i></button>
           </div>
-          <div class="text-complete">
-            <p>Tenho uma vasta experiência no desenvolvimento web, adquirida ao 
-              longo de anos trabalhando remotamente e principalmente como autônomo. 
-              Durante esse período, tive a oportunidade de colaborar com diversos 
-              projetos e clientes, aplicando meu conhecimento em tecnologias e 
-              metodologias para criar soluções web de alta qualidade e desempenho. 
-              Estou familiarizado com o trabalho remoto e possuo habilidades que me 
-              permitem enfrentar desafios com autonomia e eficiência.
-            </p>
-          </div>
+
         </div>
       </div>
     </div>
@@ -61,21 +121,25 @@
         <h4>Contato</h4>
         <ul class="contact-info">
           <li>
-            <span class="icon"><i class="fa-solid fa-phone"></i></span>
-            <span class="text"><script>document.write(showPhone);</script></span>
+            <script>document.write(`<a href='tel:${showPhone}'>`);</script>
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="text"><script>document.write(showPhone);</script></span>
+            </a>
           </li>
           <li>
-            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-            <span class="text"><script>document.write(showEmail);</script></span>
+            <script>document.write(`<a href='mailto:${showEmail}'>`);</script>
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <span class="text"><script>document.write(showEmail);</script></span>
+            </a>
           </li>
           <li>
-            <script>document.write(`<a link href='https://www.${showSite}' target='_blank'>`);</script>
+            <script>document.write(`<a href='https://www.${showSite}' target='_blank'>`);</script>
               <span class="icon"><i class="fa-solid fa-globe"></i></span>
               <span class="text"><script>document.write(showSite);</script></span>
             </a>
           </li>
           <li>
-            <script>document.write(`<a link href='https://www.${showLinkedIn}' target='_blank'>`);</script>
+            <script>document.write(`<a href='https://www.${showLinkedIn}' target='_blank'>`);</script>
               <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
               <span class="text"><script>document.write(showLinkedIn);</script></span>
             </a>
@@ -94,84 +158,254 @@
 
         <h4>Skills</h4>
         <div class="skills">
-          <div class="skills-box" style="--i:85%;">
-            <span class="icon"><i class="fa-brands fa-node-js"></i></i>
-              <p>Node</p>
-            </span>
-            <div class="value"></div>
+
+          <section class="showhide">
+            <a class="trigger"> 
+              <div class="skills-box" style="--i:80%;">
+                <span class="icon"><i class="fa-brands fa-node-js"></i>
+                  <p>Node</p>
+                </span>
+                <div class="value"></div>
+                <i class="arrow fa-solid fa-chevron-up"></i>
+              </div>
+            </a>
+            <div class="content skill-certifications" style="display:none;">
+              <p>Certificações</p>
+              <ul>
+                <li>
+                  <a href="https://www.dio.me/certificate/A77199F9" target="_blank">
+                    ✦ Bootcamp Node.js Web Developer
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <a class="trigger"> 
+              <div class="skills-box" style="--i:70%;">
+                <span class="icon"><i class="devicon-spring-plain"></i>
+                  <p>Spring</p>
+                </span>
+                <div class="value"></div>
+                <i class="arrow fa-solid fa-chevron-up"></i>
+              </div>
+            </a>
+            <div class="content skill-certifications" style="display:none;"> 
+              <p>Certificações</p>
+              <ul>
+                <li>
+                  <a href="https://www.dio.me/certificate/840BB8B4" target="_blank">
+                    ✦ Formação Programação Reativa com Spring WebFlux
+                  </a>
+                  <a href="https://www.dio.me/certificate/B50AF04B" target="_blank">
+                    ✦ Aceleração Avanade Spring Boot
+                  </a>
+                  <a href="https://www.dio.me/certificate/0609AE9D" target="_blank">
+                    ✦ Bootcamp Spring Framework Experience
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <div class="skills-box" style="--i:60%;">
+              <span class="icon"><i class="devicon-typescript-plain"></i>  
+                <p>Typescript</p>
+              </span>
+              <div class="value"></div>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <a class="trigger">
+              <div class="skills-box" style="--i:60%;">
+                <span class="icon"><i class="devicon-javascript-plain"></i>
+                  <p>Javascript</p>
+                </span>
+                <div class="value"></div>
+                <i class="arrow fa-solid fa-chevron-up"></i>
+              </div>
+            </a>
+            <div class="content skill-certifications" style="display:none;">
+              <p>Certificações</p>
+              <ul>
+                <li>
+                  <a href="https://www.dio.me/certificate/????????" target="_blank">
+                    ✦ Formação JavaScript Developer
+                  </a>
+                  <a href="https://www.dio.me/certificate/15B23A14" target="_blank">
+                    ✦ Codecamp 1st Edition JavaScript
+                  </a>
+                  <a href="https://www.dio.me/certificate/6389CDA9" target="_blank">
+                    ✦ Bootcamp Impulso Javascript Evolution
+                  </a>
+                  <a href="https://www.dio.me/certificate/854DC099" target="_blank">
+                    ✦ Bootcamp Take Blip Web Developer
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="showhide">
+          <a class="trigger">
+            <div class="skills-box" style="--i:60%;">
+              <span class="icon"><i class="fa-brands fa-java"></i>
+                <p>Java</p>
+              </span>
+              <div class="value"></div>
+              <i class="arrow fa-solid fa-chevron-up"></i>
+            </div>
+          </a>
+          <div class="content skill-certifications" style="display:none;">
+            <p>Certificações</p>
+            <ul>
+              <li>
+                <a href="https://www.dio.me/certificate/2123F1D3" target="_blank">
+                  ✦ Bootcamp Banco PAN Java Developer
+                </a>
+                <a href="https://www.dio.me/certificate/E7113B9C" target="_blank">
+                  ✦ Bootcamp TQI Kotlin Backend Developer
+                </a>
+                <a href="https://www.dio.me/certificate/3A06D910" target="_blank">
+                  ✦ Bootcamp Potência Tech iFood Java Beginners
+                </a>
+                <a href="https://www.dio.me/certificate/87615DE7" target="_blank">
+                  ✦ Bootcamp Kotlin Experience
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="skills-box" style="--i:70%;">
-            <span class="icon"><i class="devicon-spring-plain"></i>
-              <p>Spring</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:60%;">
-            <span class="icon"><i class="devicon-typescript-plain"></i>  
-              <p>Typescript</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:60%;">
-            <span class="icon"><i class="devicon-javascript-plain"></i>
-              <p>Javascript</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:60%;">
-            <span class="icon"><i class="fa-brands fa-java"></i>
-              <p>Java</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:90%;">
-            <span class="icon"><i class="fa-solid fa-database"></i>
-              <p>SQL</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:90%;">
-            <span class="icon"><i class="fa-solid fa-gear"></i>
-              <p>API</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:80%;">
-            <span class="icon"><i class="fa-brands fa-html5"></i>
-              <p>HTML</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:60%;">
-            <span class="icon"><i class="fa-brands fa-css3-alt"></i>
-              <p>CSS</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:50%;">
-            <span class="icon"><i class="fa-brands fa-angular"></i>
-              <p>Angular</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:50%;">
-            <span class="icon"><i class="fa-brands fa-react"></i>
-              <p>React</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:50%;">
-            <span class="icon"><i class="fa-brands fa-docker"></i>
-              <p>Docker</p>
-            </span>
-            <div class="value"></div>
-          </div>
-          <div class="skills-box" style="--i:85%;">
-            <span class="icon"><i class="devicon-dot-net-plain"></i>
-              <p>ASP.NET</p>
-            </span>
-            <div class="value"></div>
-          </div>
+          </section>
+
+          <section class="showhide">
+            <div class="skills-box" style="--i:90%;">
+              <span class="icon"><i class="fa-solid fa-database"></i>
+                <p>SQL</p>
+              </span>
+              <div class="value"></div>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <div class="skills-box" style="--i:90%;">
+              <span class="icon"><i class="fa-solid fa-gear"></i>
+                <p>API</p>
+              </span>
+              <div class="value"></div>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <div class="skills-box" style="--i:80%;">
+              <span class="icon"><i class="fa-brands fa-html5"></i>
+                <p>HTML</p>
+              </span>
+              <div class="value"></div>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <div class="skills-box" style="--i:60%;">
+              <span class="icon"><i class="fa-brands fa-css3-alt"></i>
+                <p>CSS</p>
+              </span>
+              <div class="value"></div>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <a class="trigger">
+              <div class="skills-box" style="--i:50%;">
+                <span class="icon"><i class="fa-brands fa-angular"></i>
+                  <p>Angular</p>
+                </span>
+                <div class="value"></div>
+                <i class="arrow fa-solid fa-chevron-up"></i>
+              </div>
+            </a>
+            <div class="content skill-certifications" style="display:none;">
+              <p>Certificações</p>
+              <ul>
+                <li>
+                  <a href="https://www.dio.me/certificate/5E720000" target="_blank">
+                    ✦ Bootcamp Potência Tech Angular Developer
+                  </a>
+                  <a href="https://www.dio.me/certificate/F7226EB4" target="_blank">
+                    ✦ Formação Angular Developer
+                  </a>
+                  <a href="https://www.dio.me/certificate/D5AE6923" target="_blank">
+                    ✦ Bootcamp Avanade Angular Developer
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <a class="trigger">
+              <div class="skills-box" style="--i:50%;">
+                <span class="icon"><i class="fa-brands fa-react"></i>
+                  <p>React</p>
+                </span>
+                <div class="value"></div>
+                <i class="arrow fa-solid fa-chevron-up"></i>
+              </div>
+            </a>
+            <div class="content skill-certifications" style="display:none;">
+              <p>Certificações</p>
+              <ul>
+                <li>
+                  <a href="https://www.dio.me/certificate/2430F18F" target="_blank">
+                    ✦ Bootcamp Impulso React Web Developer
+                  </a>
+                  <a href="https://www.dio.me/certificate/96DB9437" target="_blank">
+                    ✦ LocalizaLabs React Developer
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <a class="trigger">
+              <div class="skills-box" style="--i:50%;">
+                <span class="icon"><i class="fa-brands fa-docker"></i>
+                  <p>Docker</p>
+                </span>
+                <div class="value"></div>
+                <i class="arrow fa-solid fa-chevron-up"></i>
+              </div>
+            </a>
+            <div class="content skill-certifications" style="display:none;">
+              <p>Certificações</p>
+              <ul>
+                <li>
+                  <a href="https://www.dio.me/certificate/91966111" target="_blank">
+                    ✦ Formação Docker Fundamentals
+                  </a>
+                  <a href="https://www.dio.me/certificate/53D07908" target="_blank">
+                    ✦ Formação Kubernetes Fundamentals
+                  </a>
+                  <a href="https://www.dio.me/certificate/AFED32DB" target="_blank">
+                    ✦ Bootcamp Linux do Zero
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="showhide">
+            <div class="skills-box" style="--i:85%;">
+              <span class="icon"><i class="devicon-dot-net-plain"></i>
+                <p>ASP.NET</p>
+              </span>
+              <div class="value"></div>
+            </div>
+          </section>
+
         </div>
 
       </div>
