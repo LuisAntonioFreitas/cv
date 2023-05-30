@@ -8,18 +8,22 @@
   <title>Currículo | Luis Antonio Freitas</title>
 
   <link rel="stylesheet" type="text/css" href="styles/normalize.css"></link>
+
   <link rel="stylesheet" type="text/css" href="styles/global.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/style.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/responsive.css"></link> 
+
   <link rel="stylesheet" type="text/css" href="styles/showhide.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/showhidemore.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/showhidemoretop.css"></link>
 
+  <script type="text/javascript" src="scripts/api.js"></script>
   <script type="text/javascript" src="scripts/configurations.js"></script>
+  <script type="text/javascript" src="scripts/toggledarkmode.js" defer></script>
+
   <script type="text/javascript" src="scripts/showhide.js" defer></script> 
   <script type="text/javascript" src="scripts/showhidemore.js" defer></script> 
   <script type="text/javascript" src="scripts/showhidemoretop.js" defer></script> 
-  <script type="text/javascript" src="scripts/toggledarkmode.js" defer></script>
 </head>
 <body>
 
@@ -31,11 +35,12 @@
     </div>
 
     <div id="top" class="top top-height">
-      <h2><script>document.write(showName);</script><br><span><script>document.write(showProfession);</script></span></h2>
+      <h2 id="profile.name.text"><br><span id="profile.profession.text"></span></h2>
       <div class="group">
         <div class="left-side">
           <div class="imgFx">
-            <script>document.write(`<img src='${showPhoto}'>`);</script>
+            <!-- <script>document.write(`<img src='${showPhoto}'>`);</script> -->
+            <img id="profile.photo">
           </div>
         </div>
         <div class="right-side">
@@ -43,26 +48,12 @@
           <div class="text-main">
             <article id="text-main">
               <div class="text-simple">
-                <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
+                <!-- <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
                   e como autônomo. Colaborei em projetos diversos, aplicando conhecimentos 
                   em tecnologias e metodologias para criar soluções web de alta qualidade. 
                   Familiarizado com o trabalho remoto, possuo habilidades para enfrentar 
                   desafios com autonomia e eficiência.
-                </p>
-                <br>
-                <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
-                  e como autônomo. Colaborei em projetos diversos, aplicando conhecimentos 
-                  em tecnologias e metodologias para criar soluções web de alta qualidade. 
-                  Familiarizado com o trabalho remoto, possuo habilidades para enfrentar 
-                  desafios com autonomia e eficiência.
-                </p>
-                <br>
-                <p>Tenho ampla experiência em desenvolvimento web, trabalhando remotamente 
-                  e como autônomo. Colaborei em projetos diversos, aplicando conhecimentos 
-                  em tecnologias e metodologias para criar soluções web de alta qualidade. 
-                  Familiarizado com o trabalho remoto, possuo habilidades para enfrentar 
-                  desafios com autonomia e eficiência.
-                </p>
+                </p> -->
               </div>
               <div class="text-complete">
                 <p>Tenho uma vasta experiência no desenvolvimento web, adquirida ao 
@@ -121,43 +112,43 @@
         <h4>Contato</h4>
         <ul class="contact-info">
           <li>
-            <script>document.write(`<a href='tel:${showPhone}'>`);</script>
+            <a id="profile.phone.link">
               <span class="icon"><i class="fa-solid fa-phone"></i></span>
-              <span class="text"><script>document.write(showPhone);</script></span>
+              <span class="text" id="profile.phone.text"></span>
             </a>
           </li>
           <li>
-            <script>document.write(`<a href='mailto:${showEmail}'>`);</script>
+            <a id="profile.email.link">
               <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-              <span class="text"><script>document.write(showEmail);</script></span>
+              <span class="text" id="profile.email.text"></span>
             </a>
           </li>
           <li>
-            <script>document.write(`<a href='https://www.${showSite}' target='_blank'>`);</script>
+            <a id="profile.site.link" target="_blank">
               <span class="icon"><i class="fa-solid fa-globe"></i></span>
-              <span class="text"><script>document.write(showSite);</script></span>
+              <span class="text" id="profile.site.text"></span>
             </a>
           </li>
           <li>
-            <script>document.write(`<a href='https://www.${showLinkedIn}' target='_blank'>`);</script>
+            <a id="profile.linkedin.link" target="_blank">
               <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
-              <span class="text"><script>document.write(showLinkedIn);</script></span>
+              <span class="text" id="profile.linkedin.text"></span>
             </a>
           </li>
           <li>
-            <script>document.write(`<a link href='https://www.${showGitHub}' target='_blank'>`);</script>
+            <a id="profile.github.link" target="_blank">
               <span class="icon"><i class="fa-brands fa-github"></i></span>
-              <span class="text"><script>document.write(showGitHub);</script></span>
+              <span class="text" id="profile.github.text"></span>
             </a>
           </li>
           <li>
             <span class="icon"><i class="fa-solid fa-location-dot"></i></i></span>
-            <span class="text"><script>document.write(showLocation);</script></span>
+            <span class="text" id="profile.location.text"></span>
           </li>
         </ul>
 
         <h4>Skills</h4>
-        <div class="skills">
+        <div id="skills.text" class="skills">
 
           <section class="showhide">
             <a class="trigger"> 
@@ -451,6 +442,7 @@
         <div class="hobbies">
           <h4 class="adjst-margin">Hobbies</h4>
           <ul>
+            <span>
             <li>
               <i class="fa-solid fa-film"></i>
               <p>Cinema</p>
@@ -463,6 +455,8 @@
               <i class="fa-solid fa-gamepad"></i>
               <p>Game</p>
             </li>
+            </span>
+            <span>
             <li>
               <i class="fa-sharp fa-solid fa-book"></i>
               <p>Livro</p>
@@ -475,6 +469,7 @@
               <i class="fa-solid fa-fish"></i>
               <p>Aquário</p>
             </li>
+            </span>
           </ul>
         </div>
 

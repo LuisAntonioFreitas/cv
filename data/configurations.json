@@ -1,0 +1,55 @@
+{
+  "profile": 
+  {
+    "name": "Luis Antonio",
+    "profession": "Desenvolvedor Web",
+    "photo": "images/img_280x340.png",
+    "phone": "+55 (21) 99962.7067",
+    "email": "freitas@luisantonio.net",
+    "site": "luisantonio.net",
+    "linkedin": "linkedin.com/in/luisantoniofreitas",
+    "github": "github.com/luisantoniofreitas", 
+    "location": "Rio de Janeiro, RJ, Brasil"
+  },
+  "skills": 
+  [ 
+    {
+      "name": "Node",
+      "value": "80%",
+      "icon": "fa-brands fa-node-js",
+      "certifications": 
+      [
+        {
+          "title": "Bootcamp Node.js Web Developer",
+          "link": "https://www.dio.me/certificate/A77199F9"
+        }
+      ] 
+    },
+    {
+      "name": "Spring",
+      "value": "70%",
+      "icon": "devicon-spring-plain",
+      "certifications": [
+        {
+          "title": "Formação Programação Reativa com Spring WebFlux",
+          "link": "https://www.dio.me/certificate/840BB8B4"
+        },
+        {
+        "title": "Aceleração Avanade Spring Boot",
+        "link": "https://www.dio.me/certificate/B50AF04B"
+        },
+        {
+          "title": "Bootcamp Spring Framework Experience",
+          "link": "https://www.dio.me/certificate/0609AE9D"
+        }
+      ]
+    },
+    {
+      "name": "Typescript",
+      "value": "60%",
+      "icon": "devicon-typescript-plain",
+      "certifications": [
+      ]
+    }
+  ]
+}

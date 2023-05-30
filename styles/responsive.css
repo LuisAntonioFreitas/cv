@@ -2,23 +2,25 @@
 
   .button-toggledarkmode {
     top: -5px;
-    left: 0;
+    right: 0;
   }
   .button-toggledarkmode button {
     font-size: 1rem;
   }
 
   .container {
-    max-width: 400px;
-    min-width: 400px;
-    min-height: none; 
+    max-width: 360px;
+    min-width: 360px;
+    min-height: auto; 
     margin: 15px;
   }
 
   .top {
-    height: 180px;
     padding: 20px;
     margin-top: 20px;
+  }
+  .top-height {
+    height: 180px;
   }
   .top h2 {
     font-size: 1.15rem;
@@ -41,13 +43,32 @@
     width: 100%;
   }
   .group .right-side p {
-    font-size: 0.7em;
+    font-size: 0.75em;
   }
-  .group .right-side .text-simple {
+  /* .group .right-side .text-simple {
     display: block;
   }
   .group .right-side .text-complete {
     display: none;
+  } */
+
+  .bottom {
+    /* border: 1px solid red; */
+    gap: 40px;
+    margin: 10px 20px 0;
+    grid-template-columns: 1fr;
+  }
+  .bottom .right-side {
+    margin-top: -30px;
+  }
+
+
+
+  .hobbies {
+    margin: 10px 20px 0;
+  }
+  .hobbies ul {
+    flex-direction: column;
   }
 
 }
@@ -56,7 +77,7 @@
 
   .button-toggledarkmode {
     top: -8px;
-    left: 0;
+    right: 0;
   }
   .button-toggledarkmode button {
     font-size: 1rem;
@@ -64,14 +85,16 @@
 
   .container {
     max-width: 900px;
-    min-height: none; 
+    min-height: auto; 
     margin: 20px;
   }
 
   .top {
-    height: 240px;
     padding: 20px;
     margin-top: 20px;
+  }
+  .top-height {
+    height: 240px;
   }
   .top h2 {
     font-size: 1.25rem;
