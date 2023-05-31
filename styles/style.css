@@ -88,8 +88,19 @@ body {
 .group .right-side .text-simple {
   display: none;
 }
+.group .right-side .text-simple u,
+.group .right-side .text-simple i,
+.group .right-side .text-simple u i {
+  color: var(--font-color-white);
+}
 .group .right-side .text-complete {
   display: block;
+}
+.group .right-side .text-complete u,
+.group .right-side .text-complete i,
+.group .right-side .text-complete u i {
+  color: var(--font-color-white);
+  font-weight: 600;
 }
 
 .bottom {
@@ -176,6 +187,9 @@ body {
   margin-left: 25px;
   color: var(--font-color-primary);
 }
+.bottom .left-side .skills a:hover .p-skills-box {
+  color: var(--font-color-title);
+}
 .bottom .left-side .skills .skills-box .value {
   position: relative;
   width: 100%;
@@ -248,6 +262,7 @@ body {
 .bottom .right-side .edu-group-box .value p {
   font-size: 0.9em;
   font-weight: 300;
+  line-height: 1.42em;
 }
 .bottom .right-side .edu-group-box p:nth-child(1) {
   font-size: 1.2em;
@@ -260,7 +275,6 @@ body {
 }
 .bottom .right-side .edu-group-box b span {
   position: relative;
-  top: -2px;
   font-size: 0.8em;
   color: var(--font-color-gray);
 }
@@ -285,21 +299,101 @@ body {
 .bottom .right-side .exp-group-box .value p {
   font-size: 0.9em;
   font-weight: 300;
+  line-height: 1.42em;
 }
 .bottom .right-side .exp-group-box p:nth-child(1) {
   font-size: 1.2em;
   font-weight: 500;
 }
-.bottom .right-side .exp-group-box .value b {
+.bottom .right-side .exp-group-box .value {
+  font-weight: 600;
+}
+
+.exp-job {
   margin-bottom: 5px;
   font-weight: 600;
   color: var(--font-color-subtitle);
 }
-.bottom .right-side .exp-group-box b span {
-  position: relative;
-  top: -2px;
-  font-size: 0.8em;
+.exp-company {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 0.8rem;
   color: var(--font-color-gray);
+}
+.exp-company p {
+  margin-left: 0 !important;
+}
+.exp-company span {
+  font-size: 0.8rem;
+  color: var(--font-color-gray);
+  margin-left: 0 !important;
+}
+.exp-technologies {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--font-color-gray);
+}
+.exp-technologies p {
+  margin-left: 0 !important;
+}
+.exp-technologies span {
+  font-size: 0.9rem;
+  color: var(--font-color-gray);
+  margin-left: 0 !important;
+}
+.exp-technologies i {
+  font-weight: 600;
+  color: var(--font-color-gray);
+}
+.exp-group-box .value span {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 16px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.exp-group-box .value a {
+  text-decoration: none;
+}
+.exp-group-box .value a .dtzccv-img-overlay-link b span:nth-child(1),
+.exp-group-box .value a .dtzapp-img-overlay-link b span:nth-child(1),
+.exp-group-box .value a .dtzatd-img-overlay-link b span:nth-child(1),
+.exp-group-box .value a .cfjuri-img-overlay-link b span:nth-child(1),
+.exp-group-box .value a .goshinaikido-img-overlay-link b span:nth-child(1),
+.exp-group-box .value a .feiraoboulevard-img-overlay-link b span:nth-child(1) {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-left: -16px;
+}
+.exp-group-box .value a .dtzccv-img-overlay-link b span:nth-child(3),
+.exp-group-box .value a .dtzapp-img-overlay-link b span:nth-child(3),
+.exp-group-box .value a .dtzatd-img-overlay-link b span:nth-child(3),
+.exp-group-box .value a .cfjuri-img-overlay-link b span:nth-child(3),
+.exp-group-box .value a .goshinaikido-img-overlay-link b span:nth-child(3),
+.exp-group-box .value a .feiraoboulevard-img-overlay-link b span:nth-child(3) {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-left: 0;
+}
+.exp-group-box .value a .dtzccv-img-overlay-link b:hover .exp-dtzccv,
+.exp-group-box .value a .dtzapp-img-overlay-link b:hover .exp-dtzapp,
+.exp-group-box .value a .dtzatd-img-overlay-link b:hover .exp-dtzatd,
+.exp-group-box .value a .cfjuri-img-overlay-link b:hover .exp-cfjuri,
+.exp-group-box .value a .goshinaikido-img-overlay-link b:hover .exp-goshinaikido,
+.exp-group-box .value a .feiraoboulevard-img-overlay-link b:hover .exp-feiraoboulevard {
+  color: var(--font-color-title);
+}
+.dtzccv-img-wrapper,
+.dtzapp-img-wrapper,
+.dtzatd-img-wrapper,
+.cfjuri-img-wrapper,
+.goshinaikido-img-wrapper,
+.feiraoboulevard-img-wrapper { 
+  display: none;
+}
+.exp-group-box .value p {
+  margin-left: 16px;
 }
 
 .hobbies {

@@ -16,7 +16,7 @@ function updateProfile(profileData) {
   const photo = document.getElementById("profile.photo");
   photo.src = profileData.photo;
 
-  // // TESTS
+  // TESTS
   // nameText.innerHTML = "John Doe<br><span>Creative Designer</span>";
   // photo.src = "images/img.png";
 
