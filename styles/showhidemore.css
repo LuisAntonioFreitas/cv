@@ -1,0 +1,46 @@
+.section-text-main {
+  width: 100%;
+  max-height: 124px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-text-main-open {
+  width: 100%;
+  max-height: 10000px;
+  position: relative;
+}
+
+.button-text-main {
+  border: none;
+  width: 100%;
+  height: 42px;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  opacity: 80%;
+  background: var(--background-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2px;
+}
+.button-text-main-open {
+  position: relative;
+}
+.button-text-main span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--font-color-subtitle);
+}
+.button-text-main i {
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-top: 9px;
+  color: var(--font-color-subtitle);
+}
+
+.button-text-main:hover .mostrar-mais {
+  cursor: pointer;
+  color: var(--font-color-gray);
+}

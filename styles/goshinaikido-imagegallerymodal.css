@@ -1,0 +1,162 @@
+#goshinaikido-gallery {
+  padding-top: 40px;
+  /* @media screen and (min-width: 991px) {
+    padding: 60px 30px 0 30px;
+  } */
+}
+
+.goshinaikido-img-wrapper {
+  position: relative;
+  margin-top: 15px;
+  /* img {
+    width: 100%;
+  } */
+}
+.goshinaikido-img-wrapper img {
+  width: 100%;
+}
+.goshinaikido-img-overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* i {
+    color: #fff;
+    font-size: 3em;
+  } */
+}
+.goshinaikido-img-overlay i {
+  color: #fff;
+  font-size: 3em;
+}
+
+#goshinaikido-overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  /* Removes blue highlight */
+  -webkit-user-select: none;
+  -moz-user-select: none;    
+  -ms-user-select: none; 
+  user-select: none; 
+  /* img {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    padding: 5%;
+    @media screen and (min-width:768px) {
+        width: 60%;
+    }
+    @media screen and (min-width:1200px) {
+        width: 50%;
+    }
+  } */
+}
+#goshinaikido-overlay img {
+  margin: 0;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  padding: 5%;
+  /* @media screen and (min-width:768px) {
+      width: 60%;
+  }
+  @media screen and (min-width:1200px) {
+      width: 50%;
+  } */
+}
+
+#goshinaikido-nextButton {
+  color: #fff;
+  font-size: 4em;
+  padding: 15px;
+  transition: opacity 0.8s;
+  /* &:hover {
+    opacity: 0.7;
+  } */
+  /* @media screen and (min-width:768px) {
+    font-size: 3em;
+  } */
+}
+#goshinaikido-nextButton:hover {
+  opacity: 0.7;
+}
+
+#goshinaikido-prevButton {
+  color: #fff;
+  font-size: 4em;
+  padding: 15px;
+  transition: opacity 0.8s;
+  /* &:hover {
+    opacity: 0.7;
+  } */
+  /* @media screen and (min-width:768px) {
+    font-size: 3em;
+  } */
+}
+#goshinaikido-prevButton:hover {
+  opacity: 0.7;
+}
+
+#goshinaikido-exitButton {
+  color: #fff;
+  font-size: 3em;
+  padding: 15px;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  /* &:hover {
+    opacity: 0.7;
+  } */
+  /* @media screen and (min-width:768px) {
+    font-size: 3em;
+  } */
+}
+#goshinaikido-exitButton:hover {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 991px) {
+  #goshinaikido-gallery {
+    padding: 60px 30px 0 30px;
+  }
+}
+@media screen and (min-width:768px) {
+  #goshinaikido-overlay img {
+    width: 80%;
+  }
+  #goshinaikido-nextButton {
+    font-size: 3em;
+  }
+  #goshinaikido-prevButton {
+    font-size: 3em;
+  }
+  #goshinaikido-exitButton {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width:1200px) {
+  #goshinaikido-overlay img {
+    width: 50%;
+  } 
+}
+@media (max-width: 900px) and (orientation: landscape) {
+  #goshinaikido-overlay img {
+    width: 50%;
+  } 
+}

@@ -120,4 +120,8 @@
     font-size: 0.9em;
   }
 
+  .bottom {
+    grid-template-columns: 2fr 3fr;
+  }
+
 }
