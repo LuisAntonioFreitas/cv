@@ -41,6 +41,7 @@
   <link rel="stylesheet" type="text/css" href="styles/global.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/style.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/responsive.css"></link> 
+  <link rel="stylesheet" type="text/css" href="styles/toggledarkmode.css"></link> 
 
   <link rel="stylesheet" type="text/css" href="styles/showhide.css"></link>
   <link rel="stylesheet" type="text/css" href="styles/showhidemore.css"></link>
@@ -75,9 +76,25 @@
 
   <div class="container">
 
+    <div class="button-download">
+      <form method="get" action="Curriculo_LuisAntonioFreitas.pdf" target="_blank">
+        <button type="submit" id="buttonDownload"
+          title="Download do Currículo"><i class="fa-solid fa-cloud-arrow-down"></i></button>
+      </form>
+    </div>
+
     <div class="button-toggledarkmode">
-      <button id="buttonToggleDarkMode" onclick="handleToggleDarkMode()"
-      title="Modo Dark"><i class='fa-solid fa-moon'></i></button>
+      <!-- <button id="buttonToggleDarkMode" onclick="handleToggleDarkMode()"
+      title="Modo Dark"><i class='fa-solid fa-moon'></i></button> -->
+
+      <div class="theme-switch-wrapper">
+        <em><i class="fa-solid fa-sun"></i></em>
+        <label class="theme-switch" for="checkbox" title="Ligar/Desligar Modo Dark">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <em><i class="fa-solid fa-moon"></i></em>
+      </div>
     </div>
 
     <div id="top" class="top top-height">
@@ -532,7 +549,7 @@
               <div class="section-text-main">
               <p>
                 Realizei o desenvolvimento de um aplicativo utilizando Xamarin em C# 
-                com o objetivo de permitir que os funcionários acompanhassem suas 
+                com o objetivo de permitir que aos funcionários acompanhassem suas 
                 comissões por meio de smartphones, através de um sistema de login. 
                 Além disso, criei uma API em C# para integrar o aplicativo com o 
                 banco de dados. Essa API foi projetada para acessar as "Stored Procedures" 
@@ -636,85 +653,389 @@
           </div>
 
           <div class="exp-group-box">
-            <p>2019<br>2018</p>
+              <p>2019<br>2018</p>
+              <div class="value">
+                <div class="exp-job">Desenvolvedor Web</div>
+                <div class="exp-company">
+                  <span>Cordeiro de Faria e Advogados Associados</span>
+                  <p>Escritório de Advocacia</p>
+                </div>
+                <div class="exp-technologies">
+                  <span><i>Tecnologias</i></span>
+                  <p><i>
+                    Desenvolvimento com ASP.NET (.NET Framework VBScript), banco de dados SQL Server  
+                    utilizando “Stored Procedore”, HTML, CSS, Javascript, Ajax, entre outras.
+                  </i></p>
+                </div>
+
+                <span>
+                  <a href="#" title="Imagens Disponíveis">
+                    <i href="images/cfjuri/cfjuri_01_login.jpg" style="display:none;">
+                    <img src="images/cfjuri/cfjuri_01_login.jpg" style="display:none;"></i>
+                    <div class="cfjuri-img-overlay-link"><b>
+                      <span class="exp-cfjuri">✦ Gestão de Processos</span>
+                      <br><span class="exp-cfjuri">Sistema CF Juri</span>
+                      <div class="img-overlay-link-icon">
+                        <i class="exp-cfjuri fa-solid fa-up-right-from-square"></i>
+                      </div>
+                    </b></div>
+                  </a>
+                </span>
+                <div class="section-text-main">
+                <p>
+                  Levantamento das necessidades e entendimento de processos, realizando 
+                  análise de dados com o objetivo de projetar soluções web eficientes 
+                  para a gestão de processos. Essas soluções viabilizaram tomadas de 
+                  decisões estratégicas de forma ágil e precisa. Como responsável direto e 
+                  único, liderei o desenvolvimento, acompanhamento e manutenção do sistema web, 
+                  garantindo seu funcionamento contínuo e aprimorando-o constantemente.
+                </p>
+                <button class="button-text-main" title="mostrar mais"><span class="mostrar-mais">mostrar mais</span><i class="mostrar-mais fa-solid fa-chevron-up"></i></button>
+                </div>
+
+                <div class="exp-company">
+                  <span>Goshin Aikido</span>
+                  <p>Instituição Nacional de Pesquisa e Prática de Artes Marciais</p>
+                </div>
+                <div class="exp-technologies">
+                  <span><i>Tecnologias</i></span>
+                  <p><i>
+                    Desenvolvimento com ASP.NET (.NET Framework VBScript), banco de dados MySQL 
+                    utilizando “Stored Procedore”, HTML, CSS, Javascript, Ajax, entre outras.
+                  </i></p>
+                </div>
+
+                <span>
+                  <a href="#" title="Imagens Disponíveis">
+                    <i href="images/goshinaikido/goshinaikido_01_login.jpg" style="display:none;">
+                    <img src="images/goshinaikido/goshinaikido_01_login.jpg" style="display:none;"></i>
+                    <div class="goshinaikido-img-overlay-link"><b>
+                      <span class="exp-goshinaikido">✦ Gestão de Integrantes</span>
+                      <br><span class="exp-goshinaikido">Sistema LANET-GOSHIN-WEB</span>
+                      <div class="img-overlay-link-icon">
+                        <i class="exp-goshinaikido fa-solid fa-up-right-from-square"></i>
+                      </div>
+                    </b></div>
+                  </a>
+                </span>
+                <div class="section-text-main">
+                <p>
+                  Levantamento das necessidades e entendimento de processos, utilizando análise 
+                  de dados para projetar soluções web personalizadas. Uma das soluções do sistema 
+                  é a emissão de certificados online, proporcionando praticidade e agilidade aos usuários. 
+                  Como responsável direto e único, realizei o desenvolvimento, acompanhamento e 
+                  manutenção contínua do sistema web, garantindo seu funcionamento eficiente e 
+                  oferecendo suporte aos usuários.
+                </p>
+                <button class="button-text-main" title="mostrar mais"><span class="mostrar-mais">mostrar mais</span><i class="mostrar-mais fa-solid fa-chevron-up"></i></button>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="exp-group-box">
+            <p>2008<br>2007</p>
             <div class="value">
               <div class="exp-job">Desenvolvedor Web</div>
               <div class="exp-company">
-                <span>Cordeiro de Faria e Advogados Associados</span>
-                <p>Escritório de Advocacia</p>
+                <span>Guia de Recolhimento de Receita Judiciária</span>
+                <!-- <p></p> -->
               </div>
               <div class="exp-technologies">
                 <span><i>Tecnologias</i></span>
                 <p><i>
-                  Desenvolvimento com ASP.NET (.NET Framework VBScript), banco de dados SQL Server  
-                  utilizando “Stored Procedore”, HTML, CSS, Javascript, Ajax, entre outras.
+                  Desenvolvimento com ASP clássico, banco de dados Access, HTML, CSS, entre outras.
                 </i></p>
               </div>
 
               <span>
-                <a href="#" title="Imagens Disponíveis">
-                  <i href="images/cfjuri/cfjuri_01_login.jpg" style="display:none;">
-                  <img src="images/cfjuri/cfjuri_01_login.jpg" style="display:none;"></i>
-                  <div class="cfjuri-img-overlay-link"><b>
-                    <span class="exp-cfjuri">✦ Gestão de Processos</span>
-                    <br><span class="exp-cfjuri">Sistema CF Juri</span>
-                    <div class="img-overlay-link-icon">
-                      <i class="exp-cfjuri fa-solid fa-up-right-from-square"></i>
-                    </div>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span>✦ Gestão de G.R.E.R.J.</span>
+                    <br><span>Sistema GRERJ</span>
                   </b></div>
                 </a>
               </span>
               <div class="section-text-main">
               <p>
-                Levantamento das necessidades e entendimento de processos, realizando 
-                análise de dados com o objetivo de projetar soluções web eficientes 
-                para a gestão de processos. Essas soluções viabilizaram tomadas de 
-                decisões estratégicas de forma ágil e precisa. Como responsável direto e 
-                único, liderei o desenvolvimento, acompanhamento e manutenção do sistema web, 
-                garantindo seu funcionamento contínuo e aprimorando-o constantemente.
+                Desenvolvimento, acompanhamento e manutenção de site com sistema de gerenciamento 
+                offline integrado, focado na emissão de guias de recolhimento de receita judiciária 
+                do Rio de Janeiro. O sistema incluiu a criação de perguntas-chave que facilitaram o 
+                preenchimento da guia, garantindo sua conclusão sem erros e de forma simplificada.
               </p>
               <button class="button-text-main" title="mostrar mais"><span class="mostrar-mais">mostrar mais</span><i class="mostrar-mais fa-solid fa-chevron-up"></i></button>
               </div>
 
-              <div class="exp-company">
-                <span>Goshin Aikido</span>
-                <p>Instituição Nacional de Pesquisa e Prática de Artes Marciais</p>
-              </div>
-              <div class="exp-technologies">
-                <span><i>Tecnologias</i></span>
-                <p><i>
-                  Desenvolvimento com ASP.NET (.NET Framework VBScript), banco de dados MySQL 
-                  utilizando “Stored Procedore”, HTML, CSS, Javascript, Ajax, entre outras.
-                </i></p>
-              </div>
-
-              <span>
-                <a href="#" title="Imagens Disponíveis">
-                  <i href="images/goshinaikido/goshinaikido_01_login.jpg" style="display:none;">
-                  <img src="images/goshinaikido/goshinaikido_01_login.jpg" style="display:none;"></i>
-                  <div class="goshinaikido-img-overlay-link"><b>
-                    <span class="exp-goshinaikido">✦ Gestão de Integrantes</span>
-                    <br><span class="exp-goshinaikido">Sistema LANET-GOSHIN-WEB</span>
-                    <div class="img-overlay-link-icon">
-                      <i class="exp-goshinaikido fa-solid fa-up-right-from-square"></i>
-                    </div>
-                  </b></div>
-                </a>
-              </span>
-              <div class="section-text-main">
-              <p>
-                Levantamento das necessidades e entendimento de processos, utilizando análise 
-                de dados para projetar soluções web personalizadas. Uma das soluções do sistema 
-                é a emissão de certificados online, proporcionando praticidade e agilidade aos usuários. 
-                Como responsável direto e único, realizei o desenvolvimento, acompanhamento e 
-                manutenção contínua do sistema web, garantindo seu funcionamento eficiente e 
-                oferecendo suporte aos usuários.
-              </p>
-              <button class="button-text-main" title="mostrar mais"><span class="mostrar-mais">mostrar mais</span><i class="mostrar-mais fa-solid fa-chevron-up"></i></button>
-              </div>
-
+            </div>
           </div>
-        </div>
+
+          <div class="exp-group-box">
+            <p>2007<br>2001</p>
+            <div class="value">
+              <div class="exp-job">Desenvolvedor Web</div>
+              <div class="exp-company">
+                <span>Feirão Multimarcas | Boulevard Shopping Car</span>
+                <p>Associação de Lojistas de Venda de Veículos Automotores</p>
+              </div>
+              <div class="exp-technologies">
+                <span><i>Tecnologias</i></span>
+                <p><i>
+                  Desenvolvimento com ASP clássico, banco de dados Access, HTML, CSS, entre outras.
+                </i></p>
+              </div>
+
+              <span>
+                <a href="#" title="Imagens Disponíveis">
+                  <i href="images/feiraoboulevard/feiraoboulevard_01_site_parte1.jpg" style="display:none;">
+                  <img src="images/feiraoboulevard/feiraoboulevard_01_site_parte1.jpg" style="display:none;"></i>
+                  <div class="feiraoboulevard-img-overlay-link"><b>
+                    <span class="exp-feiraoboulevard">✦ Auto Shopping Boulevard</span>
+                    <br><span class="exp-feiraoboulevard">Sistema FEIRÃO</span>
+                    <div class="img-overlay-link-icon">
+                      <i class="exp-feiraoboulevard fa-solid fa-up-right-from-square"></i>
+                    </div>
+                  </b></div>
+                </a>
+              </span>
+              <div class="section-text-main">
+              <p>
+                Desenvolvimento, acompanhamento e manutenção de site com sistema de gerenciamento 
+                offline integrado, dedicado à gestão dos anúncios de veículos das lojas associadas. 
+                Ao longo do tempo, o sistema expandiu para mais de 80 lojas diferentes. Além disso, 
+                fui responsável pelo gerenciamento da equipe encarregada por visitar regularmente as 
+                lojas para capturar fotos digitais dos veículos, assegurando a atualização eficiente e 
+                precisa dos anúncios.
+              </p>
+              <button class="button-text-main" title="mostrar mais"><span class="mostrar-mais">mostrar mais</span><i class="mostrar-mais fa-solid fa-chevron-up"></i></button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="exp-group-box">
+            <p>2001<br>2000</p>
+            <div class="value">
+              <div class="exp-job">Desenvolvedor Web</div>
+              <!-- <div class="exp-company">
+                <span></span>
+                <p></p>
+              </div> -->
+              <div class="exp-technologies">
+                <span><i>Tecnologias</i></span>
+                <p><i>
+                  Desenvolvimento com ASP clássico, banco de dados Access, HTML, entre outras.
+                </i></p>
+              </div>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span>✦ Pneumania, America Service Brasil, Goshin Aikido, DMG Embalagens, 
+                      Charger JJJ Mecânica, Labor Shopping, M Automóveis, MR Festas, Verptro, 
+                      Telecom e Vale do Jacaré 
+                      </span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <div class="section-text-main">
+              <p>
+                Desenvolvimento de site de propaganda e informações sobre produtos e serviços 
+                das empresas acima relacionadas.
+              </p>
+              <!-- <button class="button-text-main" title="mostrar mais"><span class="mostrar-mais">mostrar mais</span><i class="mostrar-mais fa-solid fa-chevron-up"></i></button> -->
+              </div>
+
+            </div>
+          </div>
+
+          <div class="exp-group-box">
+            <p>2000<br>1998</p>
+            <div class="value">
+              <div class="exp-job">Desenvolvedor</div>
+              <!-- <div class="exp-company">
+                <span></span>
+                <p></p>
+              </div> -->
+              <div class="exp-technologies" style="margin-bottom:-5px;">
+                <span><i>Tecnologias</i></span>
+                <p><i>
+                  Desenvolvimento com Visual Basic (VB6) e banco de dados Access.
+                </i></p>
+              </div>
+
+              <div class="section-text-main">
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ Marcotel Segurança no Shopping America Mall – InfoBarra
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento, acompanhamento e manutenção de sistema de controle de estacionamento.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ World Park no Laboratório Richet na Barra da Tijuca
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento, acompanhamento e manutenção de sistema de controle de estacionamento.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ Sindicato Traquimfar
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento de sistema para emissão de boletos.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ Charger JJJ Mecânica
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento e manutenção de sistema de controle de serviços para oficina.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ Coltec
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento de sistema de controle de estoque.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ José Roberto Advocacia
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento de sistema para gerenciamento de processos.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ DomBaby Scalla Móveis
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento de sistema de controle de vendas.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ Autoescola Star
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento de sistema para registro de alunos.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ Condomínio Escuna
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento e manutenção de sistema de controle de pagamentos para condomínio.
+              </p>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span class="exp-list-company"><p>✦ DMG Embalagens
+                    </p></span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <p>
+                Desenvolvimento de sistema de pedidos gerais.
+              </p>
+
+              <button class="button-text-main" title="mostrar mais"><span class="mostrar-mais">mostrar mais</span><i class="mostrar-mais fa-solid fa-chevron-up"></i></button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="exp-group-box">
+            <p>1998<br>1994</p>
+            <div class="value">
+              <div class="exp-job">Desenvolvedor</div>
+              <!-- <div class="exp-company">
+                <span></span>
+                <p></p>
+              </div> -->
+              <div class="exp-technologies">
+                <span><i>Tecnologias</i></span>
+                <p><i>
+                  Desenvolvimento com Visual Basic (VB6) e banco de dados Access.
+                </i></p>
+              </div>
+
+              <span>
+                <a>
+                  <div class="img-overlay-link"><b>
+                    <span>✦ MG4 Confecções 
+                      </span>
+                    <!-- <br><span></span> -->
+                  </b></div>
+                </a>
+              </span>
+              <div class="section-text-main">
+              <p>
+                Desenvolvimento, acompanhamento e manutenção de sistema de integração 
+                entre as lojas e a unidade fabril, visando o gerenciamento de vendas no 
+                ramo de vestuário.
+              </p>
+              <!-- <button class="button-text-main" title="mostrar mais"><span class="mostrar-mais">mostrar mais</span><i class="mostrar-mais fa-solid fa-chevron-up"></i></button> -->
+              </div>
+
+            </div>
+          </div>
 
 
 
@@ -867,29 +1188,29 @@
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
                 <div class="dtzapp-img-wrapper">
-                  <a  href="images/dtzapp/dtzapp_04_listagem_cronogramas.jpg">
-                  <img src="images/dtzapp/dtzapp_04_listagem_cronogramas.jpg" class="img-responsive"></a>
+                  <a  href="images/dtzapp/dtzapp_04_listagem_cronogramas.png">
+                  <img src="images/dtzapp/dtzapp_04_listagem_cronogramas.png" class="img-responsive"></a>
                   <div class="dtzapp-img-overlay"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
                 <div class="dtzapp-img-wrapper">
-                  <a  href="images/dtzapp/dtzapp_05_listagem_eventos.jpg">
-                  <img src="images/dtzapp/dtzapp_05_listagem_eventos.jpg" class="img-responsive"></a>
+                  <a  href="images/dtzapp/dtzapp_05_listagem_eventos.png">
+                  <img src="images/dtzapp/dtzapp_05_listagem_eventos.png" class="img-responsive"></a>
                   <div class="dtzapp-img-overlay"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
                 <div class="dtzapp-img-wrapper">
-                  <a  href="images/dtzapp/dtzapp_06_detalhes_evento_grafico.jpg">
-                  <img src="images/dtzapp/dtzapp_06_detalhes_evento_grafico.jpg" class="img-responsive"></a>
+                  <a  href="images/dtzapp/dtzapp_06_detalhes_evento_grafico.png">
+                  <img src="images/dtzapp/dtzapp_06_detalhes_evento_grafico.png" class="img-responsive"></a>
                   <div class="dtzapp-img-overlay"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
                 <div class="dtzapp-img-wrapper">
-                  <a  href="images/dtzapp/dtzapp_07_detalhes_eventos.jpg">
-                  <img src="images/dtzapp/dtzapp_07_detalhes_eventos.jpg" class="img-responsive"></a>
+                  <a  href="images/dtzapp/dtzapp_07_detalhes_eventos.png">
+                  <img src="images/dtzapp/dtzapp_07_detalhes_eventos.png" class="img-responsive"></a>
                   <div class="dtzapp-img-overlay"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
                 </div>
               </div>
@@ -1216,8 +1537,15 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
                 <div class="feiraoboulevard-img-wrapper">
-                  <a  href="images/feiraoboulevard/feiraoboulevard_01_login.jpg">
-                  <img src="images/feiraoboulevard/feiraoboulevard_01_login.jpg" class="img-responsive"></a>
+                  <a  href="images/feiraoboulevard/feiraoboulevard_01_site_parte1.jpg">
+                  <img src="images/feiraoboulevard/feiraoboulevard_01_site_parte1.jpg" class="img-responsive"></a>
+                  <div class="feiraoboulevard-img-overlay"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="feiraoboulevard-img-wrapper">
+                  <a  href="images/feiraoboulevard/feiraoboulevard_01_site_parte2.jpg">
+                  <img src="images/feiraoboulevard/feiraoboulevard_01_site_parte2.jpg" class="img-responsive"></a>
                   <div class="feiraoboulevard-img-overlay"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
                 </div>
               </div>

@@ -138,7 +138,7 @@
 }
 @media screen and (min-width:768px) {
   #dtzapp-overlay img {
-    width: 80%;
+    width: 40%;
   }
   #dtzapp-nextButton {
     font-size: 3em;
@@ -152,11 +152,11 @@
 }
 @media screen and (min-width:1200px) {
   #dtzapp-overlay img {
-    width: 50%;
+    width: 30%;
   } 
 }
 @media (max-width: 900px) and (orientation: landscape) {
   #dtzapp-overlay img {
-    width: 50%;
+    width: 30%;
   } 
 }

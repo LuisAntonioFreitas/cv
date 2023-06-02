@@ -8,6 +8,14 @@
     font-size: 1rem;
   }
 
+  .button-download {
+    top: -5px;
+    left: 0;
+  }
+  .button-download button {
+    font-size: 1rem;
+  }
+
   .container {
     max-width: 360px;
     min-width: 360px;
@@ -80,6 +88,14 @@
     right: 0;
   }
   .button-toggledarkmode button {
+    font-size: 1rem;
+  }
+
+  .button-download {
+    top: -8px;
+    left: 0;
+  }
+  .button-download button {
     font-size: 1rem;
   }
 
