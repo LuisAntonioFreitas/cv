@@ -32,6 +32,23 @@ body {
   cursor: pointer;
 }
 
+.signature {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  font-size: 1rem;
+}
+.signature a {
+  font-family: 'Roboto', 'Poppins', sans-serif !important;
+  text-decoration-line: none;
+}
+.signature a {
+  transition: 0.3s;
+}
+.signature a:hover {
+  color: var(--font-color-title);
+}
+
 .container {
   position: relative;
   width: 100%;
