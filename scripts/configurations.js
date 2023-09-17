@@ -21,7 +21,7 @@ function updateProfile(profileData) {
   //photo.src = "images/img.png";
 
   const phoneLink = document.getElementById("profile.phone.link");
-  phoneLink.href = `tel:${profileData.phone}`;
+  phoneLink.href = `tel:${profileData.phone.replace(".", "")}`;
   const phoneText = document.getElementById("profile.phone.text");
   phoneText.innerHTML = profileData.phone;
 
