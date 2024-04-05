@@ -347,6 +347,46 @@ body {
   font-weight: 600;
 }
 
+.edu-group-box .value a {
+  text-decoration: none;
+}
+.edu-group-box .value a .img-overlay-link-icon {
+  right: 0;
+  position: absolute;
+  margin-top: -29px;
+  font-size: 0.8rem;
+}
+.edu-group-box .value a .img-overlay-link-icon i {
+  color: var(--font-color-gray);
+}
+.edu-group-box .value a .img-overlay-link b span:nth-child(1),
+.edu-group-box .value a .eduformacaoharvardcs50cs50xcc50-img-overlay-link b span:nth-child(1),
+.edu-group-box .value a .eduformacaooneoraclenexteducation-img-overlay-link b span:nth-child(1) {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-left: 0;
+}
+.edu-group-box .value a .img-overlay-link b span:nth-child(3),
+.edu-group-box .value a .eduformacaoharvardcs50cs50xcc50-img-overlay-link b span:nth-child(3),
+.edu-group-box .value a .eduformacaooneoraclenexteducation-img-overlay-link b span:nth-child(3) {
+  font-weight: 600;
+  font-size: 0.8rem;
+  /* margin-left: 16px; */
+}
+.edu-group-box .value a .img-overlay-link b:hover .exp-dtzccv,
+.edu-group-box .value a .eduformacaoharvardcs50cs50xcc50-img-overlay-link b:hover .exp-eduformacaoharvardcs50cs50xcc50,
+.edu-group-box .value a .eduformacaooneoraclenexteducation-img-overlay-link b:hover .exp-eduformacaooneoraclenexteducation {
+  color: var(--font-color-title);
+}
+.eduformacaoharvardcs50cs50xcc50-img-wrapper,
+.eduformacaooneoraclenexteducation-img-wrapper { 
+  display: none;
+}
+.eduformacaoharvardcs50cs50xcc50-img-overlay-link,
+.eduformacaooneoraclenexteducation-img-overlay-link { 
+  margin-bottom: 4px;
+}
+
 .exp-job {
   margin-bottom: 5px;
   font-weight: 600;
