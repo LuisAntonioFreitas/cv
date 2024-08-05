@@ -37,6 +37,7 @@ body {
   bottom: -30px;
   left: 0;
   font-size: 1rem;
+  font-weight: 400;
 }
 .signature a {
   font-family: 'Roboto', 'Poppins', sans-serif !important;
@@ -99,13 +100,17 @@ body {
   width: 280px;
   border: 8px solid var(--background-primary);
   box-shadow: 0 35px 55px rgba(0,0,0,0.1);
-  -webkit-filter: var(--img-filter-on); /* Safari 6.0 - 9.0 */
+  /* -webkit-filter: var(--img-filter-on); /* Safari 6.0 - 9.0 */
+  /* filter: var(--img-filter-on); /* filtro preto e branco */
+  -webkit-filter: var(--img-filter-on);
   filter: var(--img-filter-on);
   transition: 0.3s;
 }
 .group .imgFx img:hover {
-  -webkit-filter: var(--img-filter-off); /* Safari 6.0 - 9.0 */
-  filter: var(--img-filter-off);
+  /* -webkit-filter: var(--img-filter-off); /* Safari 6.0 - 9.0 */
+  /* filter: var(--img-filter-off); /* filtro preto e branco */
+  -webkit-filter: var(--img-filter-on);
+  filter: var(--img-filter-on);
 }
 .group .right-side {
   width: 100%;
@@ -540,6 +545,7 @@ body {
   flex-direction: column;
   gap: 5px;
   text-align: center;
+  font-weight: 600;
   background: var(--font-color-backvalue);
   /* cursor: pointer; */
 }
@@ -553,5 +559,6 @@ body {
   color: var(--background-primary);
 }
 .hobbies ul li:hover p {
+  font-weight: 600;
   color: var(--background-primary);
 }

@@ -41,10 +41,10 @@ article.open {
   background: var(--font-color-backvalue);
 }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media (max-width: 640px) {
 
   article {
-    max-height: 72px;
+    max-height: 126px !important;
     margin-bottom: 5px;
   }
 
@@ -66,7 +66,32 @@ article.open {
 
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 880px) {
+
+  article {
+    max-height: 126px;
+    margin-bottom: 5px;
+  }
+
+  .text-main button {
+    padding: 2px;
+    margin-top: -5px;
+  }
+
+  .text-main button span {
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 2px 8px 2px 8px;
+  }
+  .text-main button i {
+    font-size: 0.8rem;
+    padding-top: 4px;
+    padding-right: 4px;
+  }
+
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
 
   article {
     max-height: 118px;

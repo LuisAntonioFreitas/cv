@@ -1,4 +1,4 @@
-@media (max-width: 400px) and (orientation: portrait) {
+@media (max-width: 640px) {
 
   .button-toggledarkmode {
     top: -5px;
@@ -17,10 +17,24 @@
   }
 
   .container {
-    max-width: 360px;
-    min-width: 360px;
+    width: 100%;
+    max-width: 90%;
+    min-width: 360px !important;
     min-height: auto; 
     margin: 15px;
+  }
+
+  article.open {
+    max-height: 10000px !important;
+  }
+
+  .right-side {
+    padding-top: 40px;
+    margin-top: -40px;
+  }
+
+  .left-side {
+    margin-bottom: -40px;
   }
 
   .top {
@@ -28,7 +42,7 @@
     margin-top: 20px;
   }
   .top-height {
-    height: 180px;
+    height: 230px !important;
   }
   .top h2 {
     font-size: 1.15rem;
@@ -45,7 +59,7 @@
     grid-template-columns: 1fr 4fr;
   }
   .group .imgFx img {
-    width: 120px;
+    width: 160px !important;
   }
   .group .right-side {
     width: 100%;
@@ -81,7 +95,64 @@
 
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 880px) {
+
+  .button-toggledarkmode {
+    top: -5px;
+    right: 0;
+  }
+  .button-toggledarkmode button {
+    font-size: 1rem;
+  }
+
+  .button-download {
+    top: -5px;
+    left: 0;
+  }
+  .button-download button {
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 900px;
+    min-width: 460px;
+    margin: 20px;
+  }
+
+  .top {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .top-height {
+    height: 240px;
+  }
+  .top h2 {
+    font-size: 1.25rem;
+    line-height: 0.7em;
+    letter-spacing: 0.1em;
+  }
+  .top h2 span {
+    font-size: 0.6em;
+    font-weight: 300;
+  }
+
+  .group {
+    gap: 20px;
+    grid-template-columns: 1fr 4fr;
+  }
+  .group .imgFx img {
+    width: 180px;
+  }
+  .group .right-side {
+    width: 100%;
+  }
+  .group .right-side p {
+    font-size: 0.9em;
+  }
+
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
 
   .button-toggledarkmode {
     top: -8px;
@@ -101,7 +172,7 @@
 
   .container {
     max-width: 900px;
-    min-height: auto; 
+    min-height: 560px; 
     margin: 20px;
   }
 

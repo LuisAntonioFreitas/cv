@@ -69,7 +69,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media (max-width: 640px) {
 
   .theme-switch-wrapper {
     margin-top: -5px;
@@ -85,7 +85,7 @@ input:checked + .slider:before {
 
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
 
   .theme-switch-wrapper {
     margin-top: -6px;

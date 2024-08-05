@@ -14,20 +14,8 @@
   "skills": 
   [ 
     {
-      "name": "Node",
-      "value": "80%",
-      "icon": "fa-brands fa-node-js",
-      "certifications": 
-      [
-        {
-          "title": "Bootcamp Node.js Web Developer",
-          "link": "https://www.dio.me/certificate/A77199F9"
-        }
-      ] 
-    },
-    {
       "name": "Spring",
-      "value": "70%",
+      "value": "80%",
       "icon": "devicon-spring-plain",
       "certifications": [
         {
@@ -43,6 +31,18 @@
           "link": "https://www.dio.me/certificate/0609AE9D"
         }
       ]
+    },
+    {
+      "name": "Node",
+      "value": "70%",
+      "icon": "fa-brands fa-node-js",
+      "certifications": 
+      [
+        {
+          "title": "Bootcamp Node.js Web Developer",
+          "link": "https://www.dio.me/certificate/A77199F9"
+        }
+      ] 
     },
     {
       "name": "Typescript",
